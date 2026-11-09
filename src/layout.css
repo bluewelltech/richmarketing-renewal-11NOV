@@ -663,7 +663,7 @@ button:focus-visible,
   margin-inline: auto;
 }
 .solution__intro .copy-line {
-  display: inline;
+  display: block;
 }
 .solution__appeal {
   display: block;
@@ -716,6 +716,9 @@ button:focus-visible,
   line-height: 1.6;
   letter-spacing: -0.6px;
   text-align: center;
+}
+.deliverables__copy h3 .mobile-line {
+  display: block;
 }
 .deliverables__copy > p {
   font-size: 16px;
@@ -973,6 +976,9 @@ button:focus-visible,
   position: sticky;
   top: 176px;
   text-align: center;
+}
+.campaign-story .mobile-line {
+  display: block;
 }
 .campaign-story h2 {
   font-size: 46px;
