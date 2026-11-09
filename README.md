@@ -61,7 +61,7 @@ npm run build
 
 Playwright는 5306 포트에서 전용 서버를 실행합니다. PC·모바일 50개 검사는 콘텐츠, 가격, 상담·픽셀, 슬라이더, 수동 뷰어, 스크롤 복원, 반응형을 확인합니다. 테스트에서는 Meta 스크립트를 차단해 실제 광고 전환을 전송하지 않습니다.
 
-5307 포트에서 미리보기를 실행한 상태로 캡처와 텍스트 검사를 생성할 수 있습니다.
+5307 포트에서 미리보기를 실행한 상태로 캡처와 텍스트 검사를 생성할 수 있습니다. 모바일 텍스트 검사에는 380px 너비도 포함됩니다.
 
 ```bash
 node scripts/visual-review.mjs
@@ -81,7 +81,7 @@ node scripts/review-1109.mjs
 2. Actions → Deploy GitHub Pages → Run workflow를 실행합니다.
 3. 배포 완료 후 워크플로에 표시된 주소를 확인합니다.
 
-이 저장소에 코드를 올리는 것만으로 기존 `richmarketing.co.kr` 사이트나 도메인 설정은 변경되지 않습니다. 커스텀 도메인은 최종 배포 시 Pages 설정에서 연결합니다.
+현재 이 저장소의 GitHub Pages 도메인은 `richmarketing.kr`입니다. main에 소스를 올린 뒤 `Check website` 성공을 확인하고 수동 배포 워크플로를 실행하면 라이브 사이트에 반영됩니다.
 
 ## 참고 자료
 

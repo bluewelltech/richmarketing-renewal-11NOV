@@ -164,7 +164,7 @@ test('scroll reveals process once and the footer stays readable', async ({ page 
 });
 
 test('all sections fit narrow and wide screens without horizontal scrolling', async ({ page }) => {
-  for (const width of [320, 360, 390, 768, 1440]) {
+  for (const width of [320, 360, 380, 390, 768, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     await page.goto('/');
     await page.evaluate(() => document.fonts.ready);

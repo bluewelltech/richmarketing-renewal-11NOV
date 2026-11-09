@@ -483,8 +483,10 @@ button:focus-visible,
   letter-spacing: -0.8px;
 }
 .market-ingredients span {
-  display: inline-block;
-  margin-right: 6px;
+  display: block;
+}
+.market-ingredients span + span {
+  margin-top: 3px;
 }
 .hero__sub {
   font-size: 16px;
@@ -3016,5 +3018,35 @@ button:focus-visible,
   }
   .expertise-banner h2 {
     font-size: 25px;
+  }
+}
+
+/* Mobile reading rhythm: keep complete clauses together at 380px. */
+@media (max-width: 600px) {
+  .mobile-line,
+  .solution__intro .copy-line,
+  .perception__conclusion > .copy-line,
+  .consult__intro .copy-line,
+  .value-card .copy-line,
+  .application h2 .phrase,
+  .final-cta__description .phrase {
+    display: block;
+  }
+  .market-question__comparison .mobile-line {
+    white-space: nowrap;
+  }
+  .market-question .market-question__comparison {
+    font-size: clamp(25px, 7.6vw, 29px);
+  }
+  .problem__conclusion .phrase,
+  .reaction-card p .phrase {
+    display: inline-block;
+  }
+  .perception__conclusion .perception__conversion {
+    margin-top: 12px;
+  }
+  .consult__intro .copy-line + .copy-line,
+  .value-card .copy-line + .copy-line {
+    margin-top: 10px;
   }
 }

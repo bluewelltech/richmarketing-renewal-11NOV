@@ -35,7 +35,7 @@ const reactions = [
     body: (
       <>
         제품의 <em>성분, 배합, 작용원리</em> 등을
-        <br /> 기술적인 관점에서 보여줄 수 있습니다.
+        <br /> <span className="phrase">기술적인 관점에서</span> 보여줄 수 있습니다.
       </>
     ),
   },
@@ -91,7 +91,8 @@ export const blocks: Record<string, ReactNode[]> = {
     />,
     <p className="hero__kicker">요즘 대부분 브랜드들을 보면</p>,
     <h3 className="market-ingredients">
-      <span>임상 데이터</span> <span>비포·애프터</span> <span>인플루언서</span>
+      <span>인체적용시험</span> <span>비포 애프터</span> <span>리뷰</span>{" "}
+      <span>바이럴</span> <span>인플루언서</span>
     </h3>,
     <p className="hero__sub">이제는 모두 비슷하게 하고 있습니다.</p>,
     <Carousel
@@ -103,14 +104,17 @@ export const blocks: Record<string, ReactNode[]> = {
     />,
     <div className="hero__message">
       <p>
-        문제는, 소비자 눈에도{" "}
+        <span className="mobile-line">문제는, 소비자 눈에도</span>{" "}
         <strong className="text-blue text-accent">
-          모든 제품이 다 비슷해 보인다는 겁니다.
+          <span className="mobile-line">모든 제품이 다 비슷해</span>{" "}
+          <span className="mobile-line">보인다는 겁니다.</span>
         </strong>
       </p>
       <p>
-        비슷한 광고, 비슷한 효능, 비슷한 데이터 속에서 소비자가 한 번 더
-        멈춰보고, 제품을 한 번 더 들여다보게 만드는{" "}
+        <span className="mobile-line">비슷한 광고, 비슷한 효능,</span>{" "}
+        <span className="mobile-line">비슷한 데이터 속에서</span>{" "}
+        <span className="mobile-line">소비자가 한 번 더 멈춰보고,</span>{" "}
+        <span className="mobile-line">제품을 한 번 더 들여다보게 만드는</span>{" "}
         <strong className="text-accent hero__difference text-shimmer">
           새로운 차별점이 필요합니다.
         </strong>
@@ -127,8 +131,9 @@ export const blocks: Record<string, ReactNode[]> = {
           <span className="phrase">팔리지 않을까요?</span>
         </em>
       </span>{" "}
-      <span className="sentence">
-        왜 <em className="text-blue">‘비슷한 제품 중 하나’</em>로 보일까요?
+      <span className="sentence market-question__comparison">
+        <span className="mobile-line">왜 <em className="text-blue">‘비슷한 제품 중 하나’</em></span>
+        <span className="mobile-line">로 보일까요?</span>
       </span>
     </h2>,
     <p className="problem__description">
@@ -254,19 +259,19 @@ export const blocks: Record<string, ReactNode[]> = {
     <p className="perception__conclusion">
       <span className="copy-line">그리고 그 인식의 차이는</span>{" "}
       <span className="copy-line perception__keyline">
-        <span className="phrase">
+        <span className="phrase mobile-line">
           <em>“제품에 대한 호기심”</em>과
         </span>{" "}
-        <span className="phrase">
+        <span className="phrase mobile-line">
           <em>“효능에 대한 기대감”</em>을 높여,
         </span>
       </span>{" "}
-      <span className="copy-line">
-        <span className="phrase">첫 구매 전환을 만들고</span>{" "}
-        <span className="phrase">
-          <em>기존 타제품 사용자의 전환</em>까지
+      <span className="copy-line perception__conversion">
+        <span className="phrase mobile-line">첫 구매 전환을 만들고</span>{" "}
+        <span className="phrase mobile-line">
+          <em>기존 타제품 사용자의</em>
         </span>{" "}
-        유도합니다.
+        <span className="mobile-line"><em>전환</em>까지 유도합니다.</span>
       </span>
     </p>,
   ],
@@ -276,10 +281,12 @@ export const blocks: Record<string, ReactNode[]> = {
       <BookShowcase />
       <div className="deliverables__copy">
         <h3>
-          다른 경쟁제품과 확실히 차별성을 강력하게 어필할 수 있는 것,{" "}
+          <span className="mobile-line">다른 경쟁제품과 확실히</span>{" "}
+          <span className="mobile-line">차별성을 강력하게</span>{" "}
+          <span className="mobile-line">어필할 수 있는 것,</span>{" "}
           <em>
-            <span className="phrase">“특허출원 기술”이라는</span>{" "}
-            <span className="phrase">프레임입니다.</span>
+            <span className="phrase mobile-line">“특허출원 기술”이라는</span>{" "}
+            <span className="phrase mobile-line">프레임입니다.</span>
           </em>
         </h3>
         <p>
@@ -306,15 +313,19 @@ export const blocks: Record<string, ReactNode[]> = {
     </h2>,
     <div className="examples__description">
       <p>
-        아직 대부분의 브랜드는{" "}
-        <strong className="text-blue">특허출원증명서</strong>와{" "}
-        <strong className="text-blue phrase">독자기술 X종</strong>을
-        광고·상세페이지의 핵심 소재로 쓰지 않습니다.
+        <span className="mobile-line">아직 대부분의 브랜드는</span>{" "}
+        <span className="mobile-line">
+          <strong className="text-blue">특허출원증명서</strong>와{" "}
+          <strong className="text-blue phrase">독자기술 X종</strong>을
+        </span>{" "}
+        <span className="mobile-line">광고·상세페이지의 핵심 소재로</span>{" "}
+        <span className="phrase">쓰지 않습니다.</span>
       </p>
       <p>
-        그래서 지금,{" "}
-        <strong className="text-blue phrase">특허출원 기술 소재</strong>는
-        광고와 상세페이지에서{" "}
+        <span className="mobile-line">그래서 지금,{" "}
+          <strong className="text-blue phrase">특허출원 기술 소재</strong>는
+        </span>{" "}
+        <span className="mobile-line">광고와 상세페이지에서</span>{" "}
         <strong className="text-red phrase">강하게 먹힙니다.</strong>
       </p>
     </div>,
@@ -413,7 +424,10 @@ export const blocks: Record<string, ReactNode[]> = {
       height="1254"
       alt=""
     />,
-    <p>코스메틱·건기식 브랜드를 다수 운영하며, 여러 브랜드를 성장시켜온</p>,
+    <p>
+      <span className="mobile-line">코스메틱·건기식 브랜드를 다수 운영하며,</span>{" "}
+      <span className="mobile-line">여러 브랜드를 성장시켜온</span>
+    </p>,
     <h2>
       <em className="text-blue text-shimmer">
         <span className="sentence">변리사 출신</span>{" "}
@@ -453,8 +467,8 @@ export const blocks: Record<string, ReactNode[]> = {
         <strong className="text-blue">어떤 포인트를 강조할지부터</strong>
       </span>{" "}
       <span className="copy-line">
-        <strong className="text-blue">어떤 특허를 출원하면 좋을지</strong>
-        까지 설계해드립니다.
+        <strong className="text-blue">어떤 특허를 출원하면 좋을지까지</strong>{" "}
+        설계해드립니다.
       </span>
     </p>,
     <ConsultSteps />,
@@ -472,8 +486,9 @@ export const blocks: Record<string, ReactNode[]> = {
       ))}
     </ul>,
     <p className="consult__available">
-      ODM, OEM, 사입, 위탁판매, 병행수입 대표님도 제품에서 특허출원할 수 있는
-      포인트를 발굴해드립니다.
+      <span className="mobile-line">ODM, OEM, 사입, 위탁판매, 병행수입 대표님도</span>{" "}
+      <span className="mobile-line">제품에서 특허출원할 수 있는 포인트를</span>{" "}
+      <span className="mobile-line">발굴해드립니다.</span>
     </p>,
     <ConsultLink tone="light" />,
     <p className="consult-note">평일·주말 접수 가능</p>,
@@ -535,8 +550,8 @@ export const blocks: Record<string, ReactNode[]> = {
           단 <em>25~40만원</em>으로 일회성 광고 소재가 아니라,
         </span>{" "}
         <span className="copy-line">
-          대표님의 광고·상세페이지에{" "}
-          <em className="text-red phrase">반복, 지속적으로 활용</em>할 수 있는
+          <span className="mobile-line">대표님의 광고·상세페이지에</span>{" "}
+          <span className="mobile-line"><em className="text-red phrase">반복, 지속적으로 활용</em>할 수 있는</span>
         </span>{" "}
         <span className="copy-line">
           <em>차별화된 강력한 마케팅 포인트</em>를 만들어보세요.

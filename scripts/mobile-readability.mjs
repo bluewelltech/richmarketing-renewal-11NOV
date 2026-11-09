@@ -2,7 +2,7 @@ import { chromium } from "@playwright/test";
 import fs from "node:fs/promises";
 const b = await chromium.launch();
 const results = [];
-for (const width of [320, 360, 390, 430]) {
+for (const width of [320, 360, 380, 390, 430]) {
   const p = await b.newPage({
     viewport: { width, height: 900 },
     reducedMotion: "reduce",
