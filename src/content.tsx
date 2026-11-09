@@ -91,8 +91,12 @@ export const blocks: Record<string, ReactNode[]> = {
     />,
     <p className="hero__kicker">요즘 대부분 브랜드들을 보면</p>,
     <h3 className="market-ingredients">
-      <span>인체적용시험</span> <span>비포 애프터</span> <span>리뷰</span>{" "}
-      <span>바이럴</span> <span>인플루언서</span>
+      <span className="market-ingredients__row">
+        <span>인체적용시험</span> <span>비포애프터</span> <span>리뷰</span>
+      </span>{" "}
+      <span className="market-ingredients__row">
+        <span>바이럴광고</span> <span>인플루언서</span>
+      </span>
     </h3>,
     <p className="hero__sub">이제는 모두 비슷하게 하고 있습니다.</p>,
     <Carousel
@@ -281,9 +285,8 @@ export const blocks: Record<string, ReactNode[]> = {
       <BookShowcase />
       <div className="deliverables__copy">
         <h3>
-          <span className="mobile-line">다른 경쟁제품과 확실히</span>{" "}
-          <span className="mobile-line">차별성을 강력하게</span>{" "}
-          <span className="mobile-line">어필할 수 있는 것,</span>{" "}
+          <span className="mobile-line">다른 경쟁 제품과 확실히 다르다는</span>{" "}
+          <span className="mobile-line">차별성을 강력하게 어필할 수 있는 것,</span>{" "}
           <em>
             <span className="phrase mobile-line">“특허출원 기술”이라는</span>{" "}
             <span className="phrase mobile-line">프레임입니다.</span>
