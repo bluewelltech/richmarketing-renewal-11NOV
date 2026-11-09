@@ -1,0 +1,18 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+Thumbs.db
+
+# Keep local design iterations and screenshots out of the source repository.
+review/*
+!review/content-baseline.json
+!review/content-revisions.json
+!review/ASSETS.md
+!review/GENERATED-ASSETS-v2.json
+!review/RELEASE-NOTES.md
